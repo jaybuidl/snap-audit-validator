@@ -52,3 +52,18 @@ The latest version is not the audited one, so let's try with earlier versions.
 **It works!** 
 We have confirmed that the last audited Snap version is `1.0.0`.
 
+## Example 2: Kleros Scout Snap
+
+The audited version of [@kleros/scout-snap](https://snaps.metamask.io/snap/npm/kleros/scout-snap/) is `0.5.3` at commit `34d1332` according to [the audit report](https://f8t2x8b2.rocketcdn.me/wp-content/uploads/2023/06/VAR-Kleros-Scout.pdf).
+
+```bash
+$ ./validate-snap.sh @kleros/scout-snap 34d1332 0.5.3
+   Fetching snap manifest for package @kleros/scout-snap@0.5.3
+   Validating published snap manifest
+✅ Published shasum matches: DmGgmcwy9MFw1bWIJs6wesNkGIx0Kn0/dFi6Q1AtKwg=
+   Validating Git URL
+✅ Repository URL matches: https://github.com/kleros/scout-snap.git
+   Validating audited snap manifest
+✅ Audited shasum matches: DmGgmcwy9MFw1bWIJs6wesNkGIx0Kn0/dFi6Q1AtKwg=
+   Cleaning up
+```
